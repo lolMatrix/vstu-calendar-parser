@@ -36,12 +36,6 @@ jobs:
     - name: Build with Gradle Wrapper
       run: ./gradlew shadowJar
 
-    
-    - uses: AButler/upload-release-assets@v3.0
-      with:
-        files: "build/libs/*.jar"
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
-
     # NOTE: The Gradle Wrapper is the default and recommended way to run Gradle (https://docs.gradle.org/current/userguide/gradle_wrapper.html).
     # If your project does not have the Gradle Wrapper configured, you can use the following configuration to run Gradle with a specified version.
     #
