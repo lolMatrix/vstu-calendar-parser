@@ -35,7 +35,8 @@ jobs:
 
     - name: Build with Gradle Wrapper
       run: ./gradlew shadowJar
-    - name: Set assets
+
+    
     - uses: AButler/upload-release-assets@v3.0
       with:
         files: "build/libs/*.jar"
